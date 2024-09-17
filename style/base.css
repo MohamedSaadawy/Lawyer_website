@@ -1,0 +1,1290 @@
+
+/******************************************************************************/
+/* Base styles																  */
+/******************************************************************************/
+
+*
+{
+	outline:none;
+	line-height:150%;
+}
+
+body
+{
+	margin:0px;
+	padding:0px;
+	background:#483F3B url('../image/page_background.png') 0px 0px repeat-x;
+}
+
+body,input,textarea,a
+{
+	color:#CBBAAF;
+	font:13px Arial;
+	font-family:'Voces', cursive;
+}
+
+textarea
+{
+	resize:none;
+	overflow:hidden;
+}
+
+a,textarea,input 
+{ 
+	outline:none; 
+}
+
+.clear-fix:after 
+{
+	height:0;
+	clear:both;
+	content:" ";
+	font-size:0;
+	display: block;
+	visibility: hidden;
+}
+
+* html .clear-fix             { zoom: 1; } 
+*:first-child+html .clear-fix { zoom: 1; }
+
+.overflow-fix
+{
+	height:100%;
+	overflow:hidden;
+}
+
+.float-left
+{
+	float:left;
+}
+
+.float-right
+{
+	float:right;
+}
+
+.box-center
+{
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+
+.top-0
+{
+	margin-top:0px !important;
+	padding-top:0px !important;
+}
+
+.margin0	{ margin:0px !important; }
+
+.margin-top-10		{ margin-top:10px !important;		}
+.margin-bottom-10	{ margin-bottom:10px !important;	}
+.margin-bottom-20	{ margin-bottom:20px !important;	}
+.margin-bottom-30	{ margin-bottom:30px !important;	}
+
+.padding0
+{
+	padding:0px !important;
+}
+
+.text-right
+{
+	text-align:right;
+}
+
+.position-relative
+{
+	position:relative !important;
+}
+
+p
+{
+	margin:0px;
+	padding:15px 0px 0px 0px;
+}
+
+a img
+{
+	border:none;
+}
+
+a
+{	
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+
+}
+
+a.image-link
+{
+	width:100%;
+	height:100%;
+	display:block;
+	text-decoration:none;
+}
+
+.preloader
+{
+	top:0px;
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:url('../image/preloader.html') 50% 50% no-repeat;
+}
+
+/******************************************************************************/
+/*	Layouts																      */
+/******************************************************************************/
+
+	/**************************************************************************/
+	/*	Layout 33x33x33												          */
+	/**************************************************************************/
+
+	.layout-33 {}
+
+	.layout-33-left,
+	.layout-33-right,
+	.layout-33-center 
+	{
+		width:32%; 
+	}
+
+	.layout-33-left,
+	.layout-33-center
+	{
+		float:left;
+		margin-right:1.9%;
+	}
+
+	.layout-33-left
+	{
+		clear:both;
+	}
+
+	.layout-33-right
+	{
+		float:right;
+	}    
+
+	/**************************************************************************/
+	/*	Layout 50x50													      */
+	/**************************************************************************/
+
+	.layout-50 {}
+
+	.layout-50-left 
+	{ 
+		clear:both;
+		float:left; 
+	}
+
+	.layout-50-right 
+	{ 
+		float:right; 
+	}
+
+	.layout-50-left,
+	.layout-50-right 
+	{ 
+		width:48%; 
+	}
+
+	/**************************************************************************/
+	/*	Layout 60x40													      */
+	/**************************************************************************/
+
+	.layout-6040 {}
+
+	.layout-6040-left 
+	{
+		width:58%; 
+		clear:both;
+		float:left; 
+	}
+
+	.layout-6040-right 
+	{ 
+		width:38%;
+		float:right; 
+	}
+
+	/**************************************************************************/
+	/*	Layout 40x60													      */
+	/**************************************************************************/
+
+	.layout-4060 {}
+
+	.layout-4060-left 
+	{
+		width:39%; 
+		clear:both;
+		float:left; 
+	}
+
+	.layout-4060-right 
+	{ 
+		width:59%;
+		float:right; 
+	}
+
+	/**************************************************************************/
+	/*	Layout 70x30													      */
+	/**************************************************************************/
+
+	.layout-7030 {}
+
+	.layout-7030-left 
+	{
+		width:69%; 
+		clear:both;
+		float:left; 
+	}
+
+	.layout-7030-right 
+	{ 
+		width:29%;
+		float:right; 
+	}
+
+	/**************************************************************************/
+	/*	Layout 90x10													      */
+	/**************************************************************************/
+
+	.layout-9010 {}
+
+	.layout-9010-left 
+	{
+		width:89%; 
+		clear:both;
+		float:left; 
+	}
+
+	.layout-9010-right 
+	{ 
+		width:9%;
+		float:right; 
+	}
+
+	/**************************************************************************/
+	/*	Layout 30x70													      */
+	/**************************************************************************/
+
+	.layout-3070 {}
+
+	.layout-3070-left 
+	{
+		width:29%; 
+		clear:both;
+		float:left; 
+	}
+
+	.layout-3070-right 
+	{ 
+		width:69%;
+		float:right; 
+	}
+
+/******************************************************************************/
+/*	Headers																      */
+/******************************************************************************/
+
+h1,h2,h3,h4,h5,h6
+{
+	margin:0px;
+	padding:0px;
+	color:#FFFFFF;
+	line-height:1;
+	font-weight:400;
+	font-family:'Noticia Text',Serif;
+}
+
+h1 { font-size:30px; padding-bottom:10px; }
+h2 { font-size:26px; }
+h3 { font-size:24px; }
+h4 { font-size:22px; }
+h5 { font-size:20px; }
+h6 { font-size:16px; }
+
+/******************************************************************************/
+/*	List															          */
+/******************************************************************************/
+
+ul.no-list
+{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;		
+}
+
+	/**************************************************************************/
+	/*	List / List 1													      */
+	/**************************************************************************/
+
+	ul.list-1 {}
+
+		ul.list-1 li
+		{
+			margin-bottom:30px;
+		}
+
+			ul.list-1 li h6
+			{
+				padding-left:25px;
+				background-repeat:no-repeat;
+				background-position:center left;
+				background-image:url('../image/bullet_big.png');
+			}
+
+	/**************************************************************************/
+	/*	List / List 2														  */
+	/**************************************************************************/
+
+	ul.list-2 { }
+
+		ul.list-2 li
+		{
+			height:100%;
+			overflow:hidden;
+			margin-bottom:20px;
+		}
+
+			ul.list-2 li div.content-box
+			{
+				width:530px;
+				float:right;
+			}
+
+			ul.list-2 li img
+			{
+				float:left;
+				padding:5px;
+				border:solid 1px #5D514B;
+			}
+
+	/**************************************************************************/
+	/*	List / List 3														  */
+	/**************************************************************************/
+
+	ul.list-3 { }
+
+		ul.list-3 li
+		{
+			float:left;
+			width:125px;
+			padding:2px 0px 2px 15px;
+			background-repeat:no-repeat;
+			background-position:center left;
+			background-image:url('../image/bullet_small.png');           
+		}
+
+	/**************************************************************************/
+	/*	List / List 4													      */
+	/**************************************************************************/
+
+	ul.list-4 { }
+
+		ul.list-4 li
+		{
+			height:100%;
+			width:280px;
+			overflow:hidden;
+			padding-left:30px;
+			margin-bottom:25px;
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			background-image:url('../image/icon_quote.png');
+		}
+
+	/**************************************************************************/
+	/*	List / List 5														  */
+	/**************************************************************************/
+
+	ul.list-5 { }
+
+		ul.list-5 li
+		{
+			padding-left:20px;
+			margin-bottom:25px;
+			border-left:solid 1px #F66E00;
+		}
+
+		ul.list-5 li h6
+		{
+			margin-bottom:10px;
+		}       
+
+/******************************************************************************/	
+/*	Scrollbars																  */
+/******************************************************************************/
+
+.jspVerticalBar
+{
+	width:5px;
+}
+
+.jspDrag
+{
+	background-color:#5D514B;
+}
+
+.jspTrack
+{
+	background:#483F3B;
+}
+
+.jspHover
+{
+	background-color:#F66E00;
+}
+
+/******************************************************************************/
+/* Qtip																	      */
+/******************************************************************************/
+
+.ui-tooltip-error .ui-tooltip-content,
+.ui-tooltip-success .ui-tooltip-content 
+{
+	border:none;
+	color:#FFFFFF;
+	font-size:13px;
+}
+
+.ui-tooltip-content
+{
+	padding:10px 20px 10px 20px;
+}
+
+.ui-tooltip-error .ui-tooltip-content
+{
+	background:#F66E00;
+	text-shadow:0px 1px 0px #8C2811;
+}
+
+.ui-tooltip-success .ui-tooltip-content
+{
+	background:#61911B;
+	text-shadow:0px 1px 0px #3A5710;
+}
+
+/******************************************************************************/
+/* Form																          */
+/******************************************************************************/
+
+form,
+input,
+textarea
+{
+	margin:0px;
+	padding:0px;
+}
+
+textarea,
+input[type="text"]
+{
+	float:left;
+	width:250px;
+	border:none;
+	padding:10px;
+	background:none;
+	border:solid 1px #5D514B;
+}
+
+textarea
+{
+	height:70px;
+}
+
+.form-line
+{
+	clear:both;
+	float:left;
+	height:100%;
+	overflow:hidden;
+	margin-bottom:8px;
+	#float:none;
+}
+
+a.button
+{
+	width:80px;
+	height:27px;
+	display:block;
+	padding-top:8px;
+	text-align:center;
+	margin-left:192px;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	background-image:url('../image/button.png');
+}
+
+	a.button:hover
+	{
+		text-decoration:none;
+		background-position:0px -35px;
+	}
+
+/******************************************************************************/
+/*	Main																      */
+/******************************************************************************/
+
+div.main
+{
+	width:990px;
+}
+
+/******************************************************************************/
+/*	Header																      */
+/******************************************************************************/
+
+div.header
+{
+	padding:10px 0px 10px 0px;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-image:url('../image/header_divider.png');
+}
+
+	div.header span.title,
+	div.header span.subtitle
+	{
+		display:block;
+		line-height:1;
+		font-weight:400;
+		font-family:'Noticia Text',Serif;
+	}
+
+	div.header h5				{ font-size:16px; }
+	div.header span.title		{ font-size:30px; }
+	div.header span.subtitle	{ font-size:18px; }
+
+	div.header h5 span,
+	div.header span.subtitle
+	{ 
+		color:#CBBAAF; 
+	}
+
+	div.header div.header-logo,
+	div.header div.header-quote,
+	div.header div.header-phone
+	{
+		background-repeat:no-repeat;
+		background-position:center left;
+	}
+
+	div.header div.header-logo,
+	div.header div.header-quote
+	{
+		float:left;
+		padding:30px 0px 30px 0px;
+	}
+
+		div.header div.header-logo a
+		{
+			display:block;
+		}
+
+		div.header div.header-logo a,
+		div.header div.header-logo a:hover
+		{
+			text-decoration:none;
+		}
+
+	div.header div.header-logo
+	{
+		padding-left:60px;
+		padding-right:30px;
+		background-image:url('../image/header_logo.png');           
+	}
+
+	div.header div.header-quote
+	{
+		padding:38px 0px 30px 30px;
+		background-image:url('../image/header_vertical_divider.png');           
+	}
+
+	div.header div.header-phone
+	{
+		float:right;
+		margin:38px 0px 0px 0px;
+		padding:0px 0px 0px 60px;
+		background-image:url('../image/icon_contact.png');           
+	}
+
+/******************************************************************************/
+/*	Content																      */
+/******************************************************************************/
+
+div.content
+{
+	margin-bottom:30px;
+}
+
+	/**************************************************************************/
+	/*	Content / Themis													  */
+	/**************************************************************************/
+
+	div.content,
+	#themis
+	{
+		height:460px;
+	}
+
+	#themis
+	{
+		padding-top:10px;
+	}
+
+		/**********************************************************************/
+		/*	Content / Themis / Vertical Menu								  */
+		/**********************************************************************/
+
+		/**********************************************************************/
+		/*	Content / Themis / Vertical Menu - BX Slider					  */
+		/**********************************************************************/
+
+		.bx-wrapper.bx-wrapper-vertical-menu,
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-window
+		{
+			width:990px !important;
+		}	
+
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-prev,
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-next
+		{
+			top:212px;
+			right:0px;
+			width:25px;
+			height:25px;
+			display:block;
+			position:absolute;
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+		}
+
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-prev:hover,
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-next:hover
+		{
+			background-position:0px -25px;
+		}
+
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-prev
+		{ 
+			left:-40px;
+			background-image:url('../image/navigation_arrow_left.png'); 
+		}
+
+		.bx-wrapper.bx-wrapper-vertical-menu .bx-next 
+		{ 
+			right:-40px;
+			background-image:url('../image/navigation_arrow_right.png'); 
+		}
+
+		#themis-vertical-menu
+		{
+			margin:0px;
+			padding:0px;
+			width:1000px;
+			position:relative;
+			list-style-type:none;
+		}
+
+			#themis-vertical-menu li
+			{
+				float:left;
+				width:200px;
+				height:450px;
+				overflow:hidden;
+			}
+
+				#themis-vertical-menu li div.themis-vertical-menu-box-wrapper
+				{
+					width:190px;
+					height:445px;
+					display:block;
+					overflow:hidden;
+					position:relative;
+					border-bottom:solid 5px #5D514B;
+				}
+
+				#themis-vertical-menu li:hover div.themis-vertical-menu-box-wrapper
+				{
+					border-bottom-color:#F66E00;
+				}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-background,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground-hover
+					{
+						width:200px;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon-hover,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-background,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground-hover
+					{
+						background-position:0px 0px;
+						background-repeat:no-repeat;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper a,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper h3,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper h6,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon-hover,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-background,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground-hover
+					{
+						top:0px;
+						position:absolute;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon-hover,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground-hover
+					{
+						opacity:0;
+						-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+						#filter:alpha(opacity=0);
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-background
+					{
+						top:-30px;
+						height:310px;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground-hover
+					{
+						height:450px;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground
+					{
+						background-image:url('../image/box_overlay.png');
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-foreground-hover
+					{
+						background-image:url('../image/box_overlay_hover.png');
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper .themis-vertical-menu-box-icon-hover
+					{
+						left:75px;
+						top:300px;
+						width:40px;
+						height:40px;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper h3,
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper h6
+					{
+						width:100%;
+						display:block;
+						text-align:center;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper h3
+					{
+						top:350px;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper h6
+					{
+						top:380px;
+						color:#CBBAAF;
+					}
+
+					#themis-vertical-menu li div.themis-vertical-menu-box-wrapper a
+					{
+						width:100%;
+						height:100%;
+						display:block;
+					}
+
+			/******************************************************************/
+			/*	Content / Themis / Vertical Menu / Box Menu 1				  */
+			/******************************************************************/
+
+			#themis-vertical-menu li.themis-vertical-menu-box-1
+			{
+
+			}
+
+				#themis-vertical-menu li.themis-vertical-menu-box-1 .themis-vertical-menu-box-icon            { background-image:url('../image/icon_about.png');          }
+				#themis-vertical-menu li.themis-vertical-menu-box-1 .themis-vertical-menu-box-icon-hover      { background-image:url('../image/icon_about_hover.png');    }
+
+				#themis-vertical-menu li.themis-vertical-menu-box-1 .themis-vertical-menu-box-background      { background-image:url('../image/tab1_img.jpg');            }
+
+			/******************************************************************/
+			/*	Content / Themis / Vertical Menu / Box Menu 2			      */
+			/******************************************************************/
+
+			#themis-vertical-menu li.themis-vertical-menu-box-2
+			{
+
+			}
+
+				#themis-vertical-menu li.themis-vertical-menu-box-2 .themis-vertical-menu-box-icon            { background-image:url('../image/icon_services.png');           }
+				#themis-vertical-menu li.themis-vertical-menu-box-2 .themis-vertical-menu-box-icon-hover      { background-image:url('../image/icon_services_hover.png');     }
+
+				#themis-vertical-menu li.themis-vertical-menu-box-2 .themis-vertical-menu-box-background      { background-image:url('../image/tab2_img.jpg');                }
+
+			/******************************************************************/
+			/*	Content / Themis / Vertical Menu / Box Menu 3				  */
+			/******************************************************************/
+
+			#themis-vertical-menu li.themis-vertical-menu-box-3
+			{
+
+			}
+
+				#themis-vertical-menu li.themis-vertical-menu-box-3 .themis-vertical-menu-box-icon            { background-image:url('../image/icon_clients.png');            }
+				#themis-vertical-menu li.themis-vertical-menu-box-3 .themis-vertical-menu-box-icon-hover      { background-image:url('../image/icon_clients_hover.png');      }
+
+				#themis-vertical-menu li.themis-vertical-menu-box-3 .themis-vertical-menu-box-background      { background-image:url('../image/tab3_img.jpg');                }
+
+			/******************************************************************/
+			/*	Content / Themis / Vertical Menu / Box Menu 4				  */
+			/******************************************************************/
+
+			#themis-vertical-menu li.themis-vertical-menu-box-4
+			{
+
+			}
+
+				#themis-vertical-menu li.themis-vertical-menu-box-4 .themis-vertical-menu-box-icon            { background-image:url('../image/icon_practice.png');           }
+				#themis-vertical-menu li.themis-vertical-menu-box-4 .themis-vertical-menu-box-icon-hover      { background-image:url('../image/icon_practice_hover.png');     }
+
+				#themis-vertical-menu li.themis-vertical-menu-box-4 .themis-vertical-menu-box-background      { background-image:url('../image/tab4_img.jpg');                }
+
+			/******************************************************************/
+			/*	Content / Themis / Vertical Menu / Box Menu 5				  */
+			/******************************************************************/
+
+			#themis-vertical-menu li.themis-vertical-menu-box-5
+			{
+
+			}
+
+				#themis-vertical-menu li.themis-vertical-menu-box-5 .themis-vertical-menu-box-icon            { background-image:url('../image/icon_contact.png');            }
+				#themis-vertical-menu li.themis-vertical-menu-box-5 .themis-vertical-menu-box-icon-hover      { background-image:url('../image/icon_contact_hover.png');      }
+
+				#themis-vertical-menu li.themis-vertical-menu-box-5 .themis-vertical-menu-box-background      { background-image:url('../image/tab5_img.jpg');                }
+
+		/**********************************************************************/
+		/*	Content / Themis / Window										  */
+		/**********************************************************************/ 
+
+		#themis-window
+		{
+			float:right;
+			display:none;
+			overflow:hidden;
+			position:relative;
+			border-bottom:solid 5px #5D514B;
+		}
+
+			#themis-close-button
+			{
+				z-index:3;
+				right:0px;
+				width:19px;
+				height:20px;
+				display:none;
+				position:absolute;
+				background-position:0px 0px;
+				background-repeat:no-repeat;
+				background-image:url('../image/button_close.png');
+			}
+
+			#themis-close-button:hover
+			{
+				background-position:0px -20px;
+			}
+
+		#themis-window-scroll
+		{
+			z-index:1;
+			width:650px;
+			height:440px;
+			display:none;
+			position:absolute;
+			padding-right:10px;
+		}
+
+		#themis-window-content
+		{
+			width:639px;
+			padding-top:12px;
+		}
+
+		/**********************************************************************/
+		/*	Content / Themis / Horizontal Menu								  */
+		/**********************************************************************/
+
+		/**********************************************************************/
+		/*	Content / Themis / Horizontal Menu - BX Slider					  */
+		/**********************************************************************/			
+
+		.bx-wrapper.bx-wrapper-horizontal-menu
+		{
+			float:right;
+		}	
+
+		.bx-wrapper.bx-wrapper-horizontal-menu .bx-prev,
+		.bx-wrapper.bx-wrapper-horizontal-menu .bx-next
+		{
+			right:0px;
+			width:19px;
+			height:19px;
+			display:block;
+			position:absolute;
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+		}
+
+		.bx-wrapper.bx-wrapper-horizontal-menu .bx-prev:hover,
+		.bx-wrapper.bx-wrapper-horizontal-menu .bx-next:hover
+		{
+			background-position:0px -19px;
+		}
+
+		.bx-wrapper.bx-wrapper-horizontal-menu .bx-prev
+		{ 
+			top:201px;
+			background-image:url('../image/navigation_arrow_up.png'); 
+		}
+
+		.bx-wrapper.bx-wrapper-horizontal-menu .bx-next 
+		{ 
+			top:220px;
+			background-image:url('../image/navigation_arrow_down.png'); 
+		}
+
+		/**********************************************************************/
+		/*	Content / Themis / Horizontal Menu - Wrapper					  */
+		/**********************************************************************/	
+
+		#themis-horizontal-menu-wrapper
+		{
+			z-index:2;
+			height:0px;
+			float:right;
+			position:relative;				
+		}
+
+		#themis-window		
+		#themis-horizontal-menu,
+		#themis-horizontal-menu-wrapper
+		{
+			width:321px;
+		}
+
+			/******************************************************************/
+			/*	Content / Themis / Horizontal Menu - Menu					  */
+			/******************************************************************/	
+
+			#themis-horizontal-menu
+			{
+				margin:0px;
+				padding:0px;
+				background:#483F3B;
+				list-style-type:none;
+			}
+
+				#themis-horizontal-menu li
+				{
+					clear:both;
+					width:320px;
+					border-left:solid 1px #5D514B;
+					#margin-top:-4px;
+				}
+
+					#themis-horizontal-menu li a
+					{
+						display:block;
+						position:relative;
+						padding:20px 0px 20px 88px;
+						border-left:solid 2px transparent;
+					}
+
+					#themis-horizontal-menu li a,
+					#themis-horizontal-menu li a:hover,
+					#themis-horizontal-menu li.selected a
+					{
+						text-decoration:none;
+					}
+
+					#themis-horizontal-menu li:hover,
+					#themis-horizontal-menu li a:hover,
+					#themis-horizontal-menu li.selected,
+					#themis-horizontal-menu li.selected a
+					{
+						border-left-color:#F66E00;
+					}
+
+						/******************************************************/
+						/*	Content / Themis / Horizontal Menu / Icons		  */
+						/******************************************************/
+
+						#themis-horizontal-menu li a span.themis-horizontal-menu-icon,
+						#themis-horizontal-menu li a span.themis-horizontal-menu-icon-hover
+						{
+							top:25px;
+							left:30px;
+							width:40px;
+							height:40px;
+							display:block;
+							position:absolute;
+							background-repeat:no-repeat;
+							background-position:center left;
+						}
+
+						#themis-horizontal-menu li a span.themis-horizontal-menu-icon-hover
+						{
+							opacity:0;
+							-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+							#filter:alpha(opacity=0);
+						}
+
+						#themis-horizontal-menu li.themis-horizontal-menu-box-1 a span.themis-horizontal-menu-icon          { background-image:url('../image/icon_about.png');              }
+						#themis-horizontal-menu li.themis-horizontal-menu-box-1 a span.themis-horizontal-menu-icon-hover    { background-image:url('../image/icon_about_hover.png');        }                
+
+						#themis-horizontal-menu li.themis-horizontal-menu-box-2 a span.themis-horizontal-menu-icon          { background-image:url('../image/icon_services.png');           }
+						#themis-horizontal-menu li.themis-horizontal-menu-box-2 a span.themis-horizontal-menu-icon-hover    { background-image:url('../image/icon_services_hover.png');     }
+
+						#themis-horizontal-menu li.themis-horizontal-menu-box-3 a span.themis-horizontal-menu-icon          { background-image:url('../image/icon_clients.png');            }
+						#themis-horizontal-menu li.themis-horizontal-menu-box-3 a span.themis-horizontal-menu-icon-hover    { background-image:url('../image/icon_clients_hover.png');      }
+
+						#themis-horizontal-menu li.themis-horizontal-menu-box-4 a span.themis-horizontal-menu-icon          { background-image:url('../image/icon_practice.png');           }
+						#themis-horizontal-menu li.themis-horizontal-menu-box-4 a span.themis-horizontal-menu-icon-hover    { background-image:url('../image/icon_practice_hover.png');     }
+
+						#themis-horizontal-menu li.themis-horizontal-menu-box-5 a span.themis-horizontal-menu-icon          { background-image:url('../image/icon_contact.png');            }
+						#themis-horizontal-menu li.themis-horizontal-menu-box-5 a span.themis-horizontal-menu-icon-hover    { background-image:url('../image/icon_contact_hover.png');      }
+
+						/******************************************************/
+						/*	Content / Themis / Horizontal Menu / Titles		  */
+						/******************************************************/
+
+						#themis-horizontal-menu li a span.title,
+						#themis-horizontal-menu li a span.subtitle					
+						{
+							display:block;
+							font-family:'Noticia Text',Serif;
+						}
+
+						#themis-horizontal-menu li a span.title
+						{
+							font-size:18px;
+							font-weight:400;
+						}
+
+						#themis-horizontal-menu li a span.subtitle
+						{
+							color:#CBBAAF;
+							font-size:14px;
+						}
+
+/******************************************************************************/
+/*	Footer																	  */
+/******************************************************************************/
+
+div.footer
+{
+	margin-bottom:30px;
+}
+
+	div.footer h5.footer-header-column-1,
+	div.footer h5.footer-header-column-2,
+	div.footer h5.footer-header-column-3
+	{
+		padding-left:23px;
+		margin-bottom:35px;
+		background-repeat:no-repeat;
+		background-position:left 5px;
+	}
+
+	div.footer h5.footer-header-column-1 { background-image:url('../image/icon_chat.png');  }
+	div.footer h5.footer-header-column-2 { background-image:url('../image/icon_notes.png'); }
+	div.footer h5.footer-header-column-3 { background-image:url('../image/icon_pin.png');   }
+
+	/**************************************************************************/
+	/*	Footer / News list													  */
+	/*  Footer / Testimonials list											  */
+	/**************************************************************************/
+
+	div.footer ul.news-list,
+	div.footer ul.testimonials-list
+	{
+
+	}
+
+	div.footer .bx-window
+	{
+		height:170px !important;
+	}
+
+		div.footer ul.news-list li,
+		div.footer ul.testimonials-list li
+		{
+			clear:both;
+			height:100px;
+			overflow:hidden;
+		}
+
+		div.footer ul.testimonials-list li
+		{
+			padding-left:40px;
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			background-image:url('../image/icon_quote.png');
+		}
+
+			div.footer ul.news-list li div.news-list-date
+			{
+				width:40px;
+				float:left;
+				color:#FFFFFF;
+				font-size:13px;
+				text-align:center;
+				text-transform:uppercase;
+				font-family:'Noticia Text',Serif;
+			}
+
+				div.footer ul.news-list li div.news-list-date span
+				{
+					clear:both;
+					display:block;
+				}
+
+			div.footer ul.news-list li div.news-list-content
+			{
+				width:250px;
+				float:right;
+				padding-left:15px;
+				border-left:solid 1px #5D514B;
+			}
+
+			div.footer ul.testimonials-list li p,
+			div.footer ul.news-list li div.news-list-content p
+			{
+				margin:0px;
+				padding:0px;
+				margin-top:10px;
+			}
+
+		/**********************************************************************/
+		/*	Footer / BX slider navigation									  */
+		/**********************************************************************/
+
+		div.footer .bx-prev,
+		div.footer .bx-next
+		{
+			top:-53px;
+			right:0px;
+			width:15px;
+			height:15px;
+			display:block;
+			position:absolute;
+			background-position:0px 0px;
+			background-repeat:no-repeat;
+		}
+
+		div.footer .bx-prev
+		{
+			right:20px;
+		}
+
+		div.footer .bx-prev:hover,
+		div.footer .bx-next:hover
+		{
+			background-position:0px -15px;
+		}
+
+		div.footer .bx-prev { background-image:url('../image/icon_navbar_up.png');      }
+		div.footer .bx-next { background-image:url('../image/icon_navbar_down.png');    }
+
+	/**************************************************************************/
+	/*	Footer / Legal list													  */
+	/**************************************************************************/
+
+	div.footer ul.legal-links
+	{
+		margin-top:-6px;
+	}
+
+		div.footer ul.legal-links li
+		{
+			width:130px;
+			height:100%;
+			overflow:hidden;
+			padding:7px 0px 7px 20px;
+			background-repeat:no-repeat;
+			background-position:center left;
+			border-bottom:solid 1px #5D514B;
+			background-image:url('../image/bullet_small.png');
+		}
+
+		div.footer ul.legal-links li.left
+		{
+			float:left;
+			clear:both;
+		}
+
+		div.footer ul.legal-links li.right
+		{
+			float:right;
+		}
+
+/******************************************************************************/
+/*	Footer bottom															  */
+/******************************************************************************/
+
+div.footer-bottom
+{
+	background:#241F1D;
+	padding:1px 0px 15px 0px;
+}
+
+	/**************************************************************************/
+	/*	Footer bottom / Line											      */
+	/**************************************************************************/
+
+	div.footer-bottom hr
+	{
+		border:0;
+		height:1px;
+		margin:0px;
+		padding:0px;
+		line-height:1;
+		font-size:1px;
+		color:#3A322F;
+		background:#3A322F;
+		margin-bottom:15px;
+		#margin-top:-7px;
+		#margin-bottom:10px;
+	}
+
+	/**************************************************************************/
+	/*	Footer bottom / Menu												  */
+	/**************************************************************************/
+
+	div.footer-bottom ul.footer-bottom-menu
+	{
+		float:right;
+	}
+
+		div.footer-bottom ul.footer-bottom-menu li
+		{
+			float:left;
+			margin-left:15px;
+		}
